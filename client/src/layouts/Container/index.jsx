@@ -4,6 +4,8 @@ import { StyledContainer } from "./style";
 const Container = ({
   flex = false,
   column = false,
+  justifyContent,
+  alignItems,
   padding,
   paddingTop,
   paddingBottom,
@@ -31,6 +33,8 @@ const Container = ({
       marginBottom={marginBottom}
       marginLeft={marginLeft}
       marginRight={marginRight}
+      justifyContent={justifyContent}
+      alignItems={alignItems}
     >
       {children}
     </StyledContainer>
@@ -41,19 +45,18 @@ export { Container };
 
 Container.propTypes = {
   column: PropTypes.bool,
-  noPadding: PropTypes.bool,
-  noMargin: PropTypes.bool,
   flex: PropTypes.bool,
-  children: PropTypes.node,
+  justifyContent: PropTypes.string,
+  alignItems: PropTypes.string,
   padding: PropTypes.number,
   paddingTop: PropTypes.number,
   paddingBottom: PropTypes.number,
   paddingRight: PropTypes.number,
   paddingLeft: PropTypes.number,
-
   margin: PropTypes.number,
   marginTop: PropTypes.number,
   marginBottom: PropTypes.number,
   marginRight: PropTypes.number,
   marginLeft: PropTypes.number,
+  children: PropTypes.node,
 };
