@@ -1,7 +1,8 @@
+import { NavBar } from "../";
 const PublicRoute = () => {
   return (
     <>
-      <div>NavBar</div>
+      <NavBar />
       <div>contnet</div>
       <div>footer</div>
     </>
