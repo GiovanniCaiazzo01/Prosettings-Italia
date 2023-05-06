@@ -1,5 +1,11 @@
+import { Container } from "./layouts";
+
 function App() {
-  return <div></div>;
+  return (
+    <Container flex>
+      <div>we</div>
+    </Container>
+  );
 }
 
 export default App;
