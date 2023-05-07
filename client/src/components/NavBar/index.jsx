@@ -6,7 +6,7 @@ const NavBar = () => {
       <Logo
         src="https://prosettings.net/acd-cgi/img/v1/wp-content/uploads/prosettings-logo.png?dpr=1|f=auto|fit=cover|height=72|q=85|width=400"
         alt="Logo Prosettings Italia"
-        width={200}
+        width={250}
       />
       <Flex
         alignItems={"center"}
