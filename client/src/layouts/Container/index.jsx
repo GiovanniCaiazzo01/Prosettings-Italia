@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { StyledContainer } from "./style";
+import PropTypes from "prop-types";
 
 const Container = ({
   flex = false,
