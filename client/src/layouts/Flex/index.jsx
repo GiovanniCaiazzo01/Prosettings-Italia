@@ -2,13 +2,14 @@ import { StyledFlex } from "./style";
 import PropTypes from "prop-types";
 
 const Flex = ({
-  column = false,
+  column,
   justifyContent,
   alignItems,
   width,
   maxWidth,
   children,
 }) => {
+  console.log(column);
   return (
     <StyledFlex
       column={column}

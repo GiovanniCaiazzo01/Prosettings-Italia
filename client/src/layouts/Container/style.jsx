@@ -44,5 +44,8 @@ export const StyledContainer = styled.div`
     !props.margin &&
     props.marginLeft &&
     "margin-left:" + props.marginLeft + "px;"}
-  background-color: #fff;
+
+    background-color: #${(props) => props.backgroundColor};
+  ${(props) =>
+    props.borderRadius && "border-radius:" + props.borderRadius + ";"}
 `;

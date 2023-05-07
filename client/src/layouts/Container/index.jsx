@@ -1,6 +1,5 @@
 import { StyledContainer } from "./style";
 import PropTypes from "prop-types";
-
 const Container = ({
   flex = false,
   column = false,
@@ -16,9 +15,10 @@ const Container = ({
   marginBottom,
   marginRight,
   marginLeft,
+  backgroundColor,
+  borderRadius,
   children,
 }) => {
-  console.log(column);
   return (
     <StyledContainer
       flex={flex}
@@ -35,6 +35,8 @@ const Container = ({
       marginRight={marginRight}
       justifyContent={justifyContent}
       alignItems={alignItems}
+      backgroundColor={backgroundColor}
+      borderRadius={borderRadius}
     >
       {children}
     </StyledContainer>
@@ -58,5 +60,7 @@ Container.propTypes = {
   marginBottom: PropTypes.number,
   marginRight: PropTypes.number,
   marginLeft: PropTypes.number,
+  backgroundColor: PropTypes.string,
+  borderRadius: PropTypes.number,
   children: PropTypes.node,
 };

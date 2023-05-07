@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFlex = styled.div`
   display: flex;
-  flex-direction: ${(props) => (props.columns ? "column" : "row")};
+  flex-direction: ${(props) => (props.column ? "column" : "row")};
   ${(props) =>
     props.justifyContent && "justify-content:" + props.justifyContent + ";"}
   ${(props) => props.alignItems && "align-items:" + props.alignItems + ";"}
