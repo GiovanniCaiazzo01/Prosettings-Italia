@@ -1,13 +1,34 @@
 import { StyledFlex } from "./style";
 import PropTypes from "prop-types";
 
-const Flex = ({ column = false, children }) => {
-  return <StyledFlex column={column}>{children}</StyledFlex>;
+const Flex = ({
+  column = false,
+  justifyContent,
+  alignItems,
+  width,
+  maxWidth,
+  children,
+}) => {
+  return (
+    <StyledFlex
+      column={column}
+      justifyContent={justifyContent}
+      alignItems={alignItems}
+      width={width}
+      maxWidth={maxWidth}
+    >
+      {children}
+    </StyledFlex>
+  );
 };
 
 export { Flex };
 
 Flex.propTypes = {
   column: PropTypes.bool,
+  justifyContent: PropTypes.string,
+  alignItems: PropTypes.string,
+  width: PropTypes.number,
+  maxWidth: PropTypes.number,
   children: PropTypes.node,
 };
