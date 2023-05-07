@@ -10,7 +10,7 @@ const HomePage = loadable(() => import("../pages/"), {
 const MainRoute = () => {
   return (
     <Routes>
-      <Route exac path="/" element={<PublicRoute />} />
+      <Route exac path="/" element={<PublicRoute component={HomePage} />} />
     </Routes>
   );
 };

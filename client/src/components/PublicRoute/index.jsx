@@ -1,12 +1,17 @@
 import { NavBar } from "../";
-const PublicRoute = () => {
+import PropTypes from "prop-types";
+const PublicRoute = ({ component: Component }) => {
   return (
     <>
       <NavBar />
-      <div>contnet</div>
+      <Component />
       <div>footer</div>
     </>
   );
 };
 
 export { PublicRoute };
+
+PublicRoute.propTypes = {
+  component: PropTypes.element,
+};
