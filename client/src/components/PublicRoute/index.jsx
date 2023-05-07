@@ -1,10 +1,13 @@
 import { NavBar } from "../";
+import { Flex } from "../../layouts";
 import PropTypes from "prop-types";
 const PublicRoute = ({ component: Component }) => {
   return (
     <>
       <NavBar />
-      <Component />
+      <Flex justifyContent={"center"} column>
+        <Component />
+      </Flex>
       <div>footer</div>
     </>
   );
