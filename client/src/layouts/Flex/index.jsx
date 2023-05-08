@@ -7,6 +7,8 @@ const Flex = ({
   alignItems,
   width,
   maxWidth,
+  height,
+  maxHeight,
   children,
 }) => {
   console.log(column);
@@ -17,6 +19,8 @@ const Flex = ({
       alignItems={alignItems}
       width={width}
       maxWidth={maxWidth}
+      height={height}
+      maxHeight={maxHeight}
     >
       {children}
     </StyledFlex>
@@ -31,5 +35,7 @@ Flex.propTypes = {
   alignItems: PropTypes.string,
   width: PropTypes.number,
   maxWidth: PropTypes.number,
+  height: PropTypes.number,
+  maxHeight: PropTypes.number,
   children: PropTypes.node,
 };

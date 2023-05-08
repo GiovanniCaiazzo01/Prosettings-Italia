@@ -8,4 +8,6 @@ export const StyledFlex = styled.div`
   ${(props) => props.alignItems && "align-items:" + props.alignItems + ";"}
   width: ${(props) => (props.width ? props.width + "px;" : "100%;")}
   ${(props) => props.maxWidth && "max-width:" + props.maxWidth + "px;"}
+  ${(props) => props.height && "height:" + props.height + "px;"}
+  ${(props) => props.maxHeight && "max-height:" + props.height + "px;"}
 `;
