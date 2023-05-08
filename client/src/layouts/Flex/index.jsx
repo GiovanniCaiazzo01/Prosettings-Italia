@@ -11,7 +11,6 @@ const Flex = ({
   maxHeight,
   children,
 }) => {
-  console.log(column);
   return (
     <StyledFlex
       column={column}

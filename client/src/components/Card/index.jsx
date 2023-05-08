@@ -5,8 +5,8 @@ const Card = () => {
     <Background
       backgroundImage="csgo"
       borderRadius={15}
-      backgroundSize={"contain"}
-      backgroundRepeat={"no-repeat"}
+      backgroundSize="contain"
+      backgroundRepeat="no-repeat"
     >
       <Container
         paddingTop={50}
