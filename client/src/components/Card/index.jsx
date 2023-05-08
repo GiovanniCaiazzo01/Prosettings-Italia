@@ -1,9 +1,10 @@
-import { Background, Container, Flex } from "../../layouts";
+import { Background, Container, Flex, Img } from "../../layouts";
+import PropTypes from "prop-types";
 
-const Card = () => {
+const Card = ({ bgImage, bottomLogo }) => {
   return (
     <Background
-      backgroundImage="csgo"
+      backgroundImage={bgImage}
       borderRadius={15}
       backgroundSize="contain"
       backgroundRepeat="no-repeat"
@@ -22,8 +23,7 @@ const Card = () => {
           justifyContent="flex-end"
           alignItems="center"
         >
-          <div>asdòlkdsalda</div>
-          <div>asdòlkdsalda</div>
+          <Img src={bottomLogo} />
         </Flex>
       </Container>
     </Background>
@@ -31,3 +31,8 @@ const Card = () => {
 };
 
 export { Card };
+
+Card.propTypes = {
+  bgImage: PropTypes.string,
+  bottomLogo: PropTypes.string,
+};

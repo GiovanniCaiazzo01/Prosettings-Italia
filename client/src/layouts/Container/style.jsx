@@ -47,7 +47,7 @@ export const StyledContainer = styled.div`
 
     background-color: #${(props) => props.backgroundColor};
   ${(props) =>
-    props.borderRadius && "border-radius:" + props.borderRadius + ";"}
+    props.borderRadius && "border-radius:" + props.borderRadius + "px;"}
 
   color: #fff;
 `;
