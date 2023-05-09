@@ -8,6 +8,7 @@ const Heading = ({
   marginLeft,
   marginRight,
   fontWeight,
+  color,
   children,
 }) => {
   return (
@@ -28,10 +29,11 @@ export { Heading };
 
 Heading.propTypes = {
   fontSize: PropTypes.number,
+  fontWeight: PropTypes.string,
   marginTop: PropTypes.number,
   marginBottom: PropTypes.number,
   marginLeft: PropTypes.number,
   marginRight: PropTypes.number,
-  fontWeight: PropTypes.string,
+  colot: PropTypes.string,
   children: PropTypes.node,
 };

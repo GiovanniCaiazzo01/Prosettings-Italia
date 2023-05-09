@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHeading = styled.h1`
+  ${(props) => props.color && "color:#" + props.color + ";"}
+
   ${(props) => props.fontSize && "font-size:" + props.fontSize + "rem;"}
   ${(props) => props.fontWeight && "font-weight:" + props.fontWeight + ";"}
   ${(props) => props.marginTop && "margin-top:" + props.marginTop + "rem;"}
