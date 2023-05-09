@@ -1,3 +1,4 @@
+export { Heading } from "./Heading";
 export { Img } from "./Img";
 export { Background } from "./Background";
 export { LinkElement } from "./LinkElement";
