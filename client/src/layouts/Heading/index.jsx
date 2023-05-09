@@ -18,6 +18,7 @@ const Heading = ({
       marginBottom={marginBottom}
       marginLeft={marginLeft}
       marginRight={marginRight}
+      color={color}
       fontWeight={fontWeight}
     >
       {children}
@@ -34,6 +35,6 @@ Heading.propTypes = {
   marginBottom: PropTypes.number,
   marginLeft: PropTypes.number,
   marginRight: PropTypes.number,
-  colot: PropTypes.string,
+  color: PropTypes.string,
   children: PropTypes.node,
 };
