@@ -1,5 +1,4 @@
 import { StyledImg } from "./style";
-
 import csgoLogo from "../../assets/gamesLogo/cs_go.svg";
 import valorantLogo from "../../assets/gamesLogo/valorant.svg";
 import apexLogo from "../../assets/gamesLogo/apex.svg";
@@ -13,7 +12,7 @@ import PropTypes from "prop-types";
 const IMAGES = {
   csgo: csgoLogo,
   valorant: valorantLogo,
-  apex: apexLogo,
+  apexLegend: apexLogo,
   fortnite: fortniteLogo,
   overwatch: overwatch2Logo,
   pubg: pubgLogo,
@@ -22,7 +21,13 @@ const IMAGES = {
 
 const Img = ({ src, alt, width, height }) => {
   return (
-    <StyledImg src={IMAGES[src]} alt={alt} width={width} height={height} />
+    <StyledImg
+      src={IMAGES[src]}
+      alt={alt}
+      width={width}
+      height={height}
+      loading="lazy"
+    />
   );
 };
 
