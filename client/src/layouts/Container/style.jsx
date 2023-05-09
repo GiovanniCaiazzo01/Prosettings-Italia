@@ -1,16 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  ${(props) => props.flex && "display: flex;"}
-  ${(props) => props.flex && props.column && "flex-direction: column;"}  
-  ${(props) =>
-    props.flex &&
-    props.justifyContent &&
-    "justify-content:" + props.justifyContent + ";"}
-    ${(props) =>
-    props.flex && props.alignItems && "align-items:" + props.alignItems + ";"}
-  
-    ${(props) => props.padding && "padding:" + props.padding + "px;"}
+  ${(props) => props.padding && "padding:" + props.padding + "px;"}
   ${(props) =>
     !props.padding &&
     props.paddingTop &&

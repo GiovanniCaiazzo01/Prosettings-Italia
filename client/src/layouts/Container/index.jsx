@@ -1,10 +1,6 @@
 import { StyledContainer } from "./style";
 import PropTypes from "prop-types";
 const Container = ({
-  flex = false,
-  column = false,
-  justifyContent,
-  alignItems,
   padding,
   paddingTop,
   paddingBottom,
@@ -21,8 +17,6 @@ const Container = ({
 }) => {
   return (
     <StyledContainer
-      flex={flex}
-      column={column}
       padding={padding}
       paddingTop={paddingTop}
       paddingBottom={paddingBottom}
@@ -33,8 +27,6 @@ const Container = ({
       marginBottom={marginBottom}
       marginLeft={marginLeft}
       marginRight={marginRight}
-      justifyContent={justifyContent}
-      alignItems={alignItems}
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
     >
@@ -46,10 +38,6 @@ const Container = ({
 export { Container };
 
 Container.propTypes = {
-  column: PropTypes.bool,
-  flex: PropTypes.bool,
-  justifyContent: PropTypes.string,
-  alignItems: PropTypes.string,
   padding: PropTypes.number,
   paddingTop: PropTypes.number,
   paddingBottom: PropTypes.number,
