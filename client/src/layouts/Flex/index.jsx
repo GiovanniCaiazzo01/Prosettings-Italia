@@ -9,11 +9,13 @@ const Flex = ({
   maxWidth,
   height,
   maxHeight,
+  flexWrap,
   children,
 }) => {
   return (
     <StyledFlex
       column={column}
+      flexWrap={flexWrap}
       justifyContent={justifyContent}
       alignItems={alignItems}
       width={width}
@@ -30,6 +32,7 @@ export { Flex };
 
 Flex.propTypes = {
   column: PropTypes.bool,
+  flexWrap: PropTypes.bool,
   justifyContent: PropTypes.string,
   alignItems: PropTypes.string,
   width: PropTypes.number,
