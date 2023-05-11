@@ -11,6 +11,15 @@ const Flex = ({
   maxHeight,
   flexWrap,
   padding,
+  paddingTop,
+  paddingBottom,
+  paddingRight,
+  paddingLeft,
+  margin,
+  marginTop,
+  marginBottom,
+  marginRight,
+  marginLeft,
   children,
 }) => {
   return (
@@ -24,6 +33,15 @@ const Flex = ({
       height={height}
       maxHeight={maxHeight}
       padding={padding}
+      paddingTop={paddingTop}
+      paddingBottom={paddingBottom}
+      paddingRight={paddingRight}
+      paddingLeft={paddingLeft}
+      margin={margin}
+      marginTop={marginTop}
+      marginBottom={marginBottom}
+      marginRight={marginRight}
+      marginLeft={marginLeft}
     >
       {children}
     </StyledFlex>
@@ -42,5 +60,14 @@ Flex.propTypes = {
   height: PropTypes.number,
   maxHeight: PropTypes.number,
   padding: PropTypes.number,
+  paddingTop: PropTypes.number,
+  paddingBottom: PropTypes.number,
+  paddingRight: PropTypes.number,
+  paddingLeft: PropTypes.number,
+  margin: PropTypes.number,
+  marginTop: PropTypes.number,
+  marginBottom: PropTypes.number,
+  marginRight: PropTypes.number,
+  marginLeft: PropTypes.number,
   children: PropTypes.node,
 };

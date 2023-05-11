@@ -3,17 +3,10 @@ import { Container, Flex, Heading } from "../../../layouts";
 const SupportedGames = () => {
   return (
     <Container padding={20} borderRadius={20} backgroundColor="fff">
-      <Heading
-        color="000000"
-        fontSize={1.5}
-        marginBottom={0}
-        marginLeft={0}
-        marginRight={0}
-        marginTop={0}
-      >
+      <Heading color="000000" fontSize={1.5} marginLeft={2.5} marginTop={0.1}>
         Supported Games
       </Heading>
-      <Flex alignItems="center" justifyContent="space-around" flexWrap>
+      <Flex alignItems="center" justifyContent="center" flexWrap>
         <GameCard bgImage="csgo" bottomLogo="csgo" bottomHeading="CS:GO" />
         <GameCard
           bgImage="valorant"
