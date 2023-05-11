@@ -1,4 +1,4 @@
 export { Logo } from "./Logo";
-export { Card } from "./Card";
+export { GameCard } from "./GameCard";
 export { NavBar } from "./NavBar";
 export { PublicRoute } from "./PublicRoute";

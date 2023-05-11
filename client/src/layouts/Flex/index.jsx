@@ -10,6 +10,7 @@ const Flex = ({
   height,
   maxHeight,
   flexWrap,
+  padding,
   children,
 }) => {
   return (
@@ -22,6 +23,7 @@ const Flex = ({
       maxWidth={maxWidth}
       height={height}
       maxHeight={maxHeight}
+      padding={padding}
     >
       {children}
     </StyledFlex>
@@ -39,5 +41,6 @@ Flex.propTypes = {
   maxWidth: PropTypes.number,
   height: PropTypes.number,
   maxHeight: PropTypes.number,
+  padding: PropTypes.number,
   children: PropTypes.node,
 };

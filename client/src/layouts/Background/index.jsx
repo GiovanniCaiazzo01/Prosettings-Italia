@@ -6,6 +6,10 @@ const Background = ({
   backgroundSize,
   backgroundRepeat,
   borderRadius,
+  width,
+  height,
+  maxWidth,
+  maxHeight,
   children,
 }) => {
   return (
@@ -14,6 +18,10 @@ const Background = ({
       backgroundRepeat={backgroundRepeat}
       backgroundSize={backgroundSize}
       borderRadius={borderRadius}
+      width={width}
+      height={height}
+      maxWidth={maxWidth}
+      maxHeight={maxHeight}
     >
       {children}
     </StyledBackground>
@@ -27,5 +35,9 @@ Background.propTypes = {
   backgroundSize: PropTypes.string,
   backgroundRepeat: PropTypes.string,
   borderRadius: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  maxWidth: PropTypes.number,
+  maxHeight: PropTypes.number,
   children: PropTypes.node,
 };
