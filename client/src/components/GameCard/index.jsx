@@ -17,10 +17,10 @@ const GameCard = ({ bgImage, bottomLogo, bottomHeading }) => {
             borderRadius={15}
           >
             <Flex column justifyContent="flex-end" alignItems="center">
-              <Img src={bottomLogo} width={80} marginBottom={20} />
+              <Img src={bottomLogo} width={110} marginBottom={20} />
             </Flex>
           </Background>
-          <Heading color="000000" fontSize={1}>
+          <Heading color="6e6e6e" fontSize={1}>
             {bottomHeading}
           </Heading>
         </Flex>
