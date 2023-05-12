@@ -2,7 +2,7 @@ import { Container, LinkElement, Flex } from "../../layouts/";
 import { Logo } from "../Logo";
 const NavBar = () => {
   return (
-    <Container paddingLeft={20} paddingRight={20} backgroundColor="fff">
+    <Container padding={10} backgroundColor="fff">
       <Flex justifyContent="space-between" alignItems="center">
         <Logo width={150} />
         <Flex alignItems="center" justifyContent="space-around" maxWidth={800}>
