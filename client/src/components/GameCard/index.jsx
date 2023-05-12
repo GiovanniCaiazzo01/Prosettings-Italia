@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { Background, Flex, Heading, Img } from "../../layouts";
 import PropTypes from "prop-types";
 
-const GameCard = ({ bgImage, bottomLogo, bottomHeading }) => {
+const GameCard = ({ bgImage, bottomLogo, bottomHeading, linkTo }) => {
   return (
     <>
-      <div>
+      <Link to={linkTo}>
         <Flex column alignItems="center" marginRight={25}>
           <Background
             backgroundImage={bgImage}
@@ -24,7 +25,7 @@ const GameCard = ({ bgImage, bottomLogo, bottomHeading }) => {
             {bottomHeading}
           </Heading>
         </Flex>
-      </div>
+      </Link>
     </>
   );
 };
@@ -35,4 +36,5 @@ GameCard.propTypes = {
   bgImage: PropTypes.string,
   bottomLogo: PropTypes.string,
   bottomHeading: PropTypes.string,
+  linkTo: PropTypes.string,
 };
