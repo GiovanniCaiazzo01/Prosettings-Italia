@@ -11,6 +11,7 @@ const MainRoute = () => {
   return (
     <Routes>
       <Route exac path="/" element={<PublicRoute component={HomePage} />} />
+      <Route path="*" element={<div>ocaz</div>} />
     </Routes>
   );
 };
