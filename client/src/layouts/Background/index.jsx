@@ -1,6 +1,5 @@
 import { StyledBackground } from "./style";
 import PropTypes from "prop-types";
-
 const Background = ({
   backgroundImage,
   backgroundSize,

@@ -14,6 +14,7 @@ const images = {
   overwatch: overwatchImage,
   pubg: pubgImage,
 };
+
 export const StyledBackground = styled.div`
   ${(props) => props.width && "width:" + props.width + "px;"}
   ${(props) => props.maxWidth && "max-width:" + props.maxWidth + "px;"}
@@ -24,4 +25,9 @@ export const StyledBackground = styled.div`
   background-image: url("${(props) => images[props.backgroundImage]}");
   background-size: ${(props) => props.backgroundSize};
   background-repeat: ${(props) => props.backgroundRepeat};
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

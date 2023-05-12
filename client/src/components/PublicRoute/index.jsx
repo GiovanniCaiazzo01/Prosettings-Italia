@@ -7,7 +7,7 @@ const PublicRoute = ({ component: Component }) => {
       <NavBar />
       <Flex>
         <div style={{ width: "25%" }}>left</div>
-        <Flex column justifyContent={"center"}>
+        <Flex column justifyContent="center" alignItems="center">
           <Component />
         </Flex>
         <div style={{ width: "25%" }}>right</div>
