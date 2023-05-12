@@ -16,18 +16,23 @@ const images = {
 };
 
 export const StyledBackground = styled.div`
-  ${(props) => props.width && "width:" + props.width + "px;"}
-  ${(props) => props.maxWidth && "max-width:" + props.maxWidth + "px;"}
-  ${(props) => props.height && "height:" + props.height + "px;"}  
-  ${(props) => props.maxHeight && "max-height:" + props.height + "px;"}
-  ${(props) =>
-    props.borderRadius && "border-radius:" + props.borderRadius + "px;"}
-  background-image: url("${(props) => images[props.backgroundImage]}");
+  width: ${(props) => props.width}px;
+  max-width: ${(props) => props.maxWidth}px;
+  height: ${(props) => props.height}px;
+  max-height: ${(props) => props.maxHeight}px;
+  border-radius: ${(props) => props.borderRadius}px;
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) -7.44%,
+      rgba(17, 17, 17, 0.8) 105.95%
+    ),
+    url(${(props) => images[props.backgroundImage]});
   background-size: ${(props) => props.backgroundSize};
   background-repeat: ${(props) => props.backgroundRepeat};
   transition: transform 1s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `;
