@@ -5,7 +5,7 @@ const Logo = ({ width }) => {
   const ALT = "Prosettings Italia logo";
   const LOGO = "prosettingsitalia";
 
-  return <Img src={LOGO} alt={ALT} width={width} />;
+  return <Img isLogo src={LOGO} alt={ALT} width={width} />;
 };
 
 export { Logo };
