@@ -7,10 +7,19 @@ const HomePage = loadable(() => import("../pages/"), {
   resolveComponent: (components) => components.HomePage,
 });
 
+const GameDetail = loadable(() => import("../pages/"), {
+  resolveComponent: (components) => components.GameDetail,
+});
+
 const MainRoute = () => {
   return (
     <Routes>
       <Route exac path="/" element={<PublicRoute component={HomePage} />} />
+      <Route
+        exac
+        path="/game/:game"
+        element={<PublicRoute component={GameDetail} />}
+      />
       <Route path="*" element={<div>ocaz</div>} />
     </Routes>
   );

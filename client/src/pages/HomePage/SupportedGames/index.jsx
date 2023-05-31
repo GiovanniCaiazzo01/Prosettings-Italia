@@ -11,40 +11,40 @@ const SupportedGames = () => {
       >
         <Flex alignItems="center" justifyContent="center" flexWrap>
           <GameCard
+            gameId="csgo"
             bgImage="csgo"
             bottomLogo="csgo"
             bottomHeading="CS:GO"
-            linkTo="/games/csgo"
           />
           <GameCard
+            gameId="valorant"
             bgImage="valorant"
             bottomLogo="valorant"
             bottomHeading="Valorant"
-            linkTo="/games/valorant"
           />
           <GameCard
+            gameId="fortnite"
             bgImage="fortnite"
             bottomLogo="fortnite"
             bottomHeading="Fortnite"
-            linkTo="/games/fortnite"
           />
           <GameCard
+            gameId="apexLegends"
             bgImage="apexLegends"
             bottomLogo="apexLegends"
             bottomHeading="Apex Legends"
-            linkTo="/games/apex-legends"
           />
           <GameCard
+            gameId="overwatch2"
             bgImage="overwatch"
             bottomLogo="overwatch"
             bottomHeading="Overwatch 2"
-            linkTo="/games/overwatch-2"
           />
           <GameCard
+            gameId="pubg"
             bgImage="pubg"
             bottomLogo="pubg"
             bottomHeading="Pubg"
-            linkTo="/games/pubg"
           />
         </Flex>
       </Container>
