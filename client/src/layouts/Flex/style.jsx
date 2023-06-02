@@ -12,7 +12,7 @@ export const StyledFlex = styled.div`
     props.width || props.width === 0 ? props.width + "px" : "100%"};
   ${(props) => props.maxWidth && "max-width:" + props.maxWidth + "px;"}
   height: ${(props) =>
-    props.height || props.width === 0 ? props.height : "100%"};
+    props.height || props.height === 0 ? props.height + "px" : "100%"};
   ${(props) => props.maxHeight && "max-height:" + props.height + "px;"}
 
   ${(props) => props.padding && "padding:" + props.padding + "px;"}
