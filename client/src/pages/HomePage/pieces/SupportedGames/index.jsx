@@ -1,5 +1,5 @@
-import { GameCard } from "../../../components";
-import { Container, Flex } from "../../../layouts";
+import { GameCard } from "../../../../components";
+import { Container, Flex } from "../../../../layouts";
 const SupportedGames = () => {
   return (
     <>

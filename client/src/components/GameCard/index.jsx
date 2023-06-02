@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Background, Flex, Heading, Img } from "../../layouts";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const GameCard = ({ bgImage, bottomLogo, bottomHeading, gameId }) => {

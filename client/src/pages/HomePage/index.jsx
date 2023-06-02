@@ -1,5 +1,5 @@
 import { Logo } from "../../components";
-import SupportedGames from "./SupportedGames";
+import SupportedGames from "./pieces/SupportedGames";
 
 const HomePage = () => {
   return (
