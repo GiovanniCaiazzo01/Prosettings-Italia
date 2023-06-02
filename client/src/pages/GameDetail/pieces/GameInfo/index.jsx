@@ -1,8 +1,10 @@
 import { Container, Flex, Heading } from "../../../../layouts";
 import { GameCard } from "../../../../components/";
-import PropTypes from "prop-types";
+import { useParams } from "react-router-dom";
 
-const GameInfo = ({ game }) => {
+const GameInfo = () => {
+  const { game } = useParams();
+
   return (
     <Container
       padding={15}
@@ -39,7 +41,3 @@ const GameInfo = ({ game }) => {
 };
 
 export { GameInfo };
-
-GameInfo.propTypes = {
-  game: PropTypes.string,
-};
