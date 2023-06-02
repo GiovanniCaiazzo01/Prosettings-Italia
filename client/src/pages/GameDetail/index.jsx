@@ -28,7 +28,7 @@ const GameDetail = () => {
               <Heading fontSize={0.8} color="000000">
                 300
               </Heading>
-            </Flex>{" "}
+            </Flex>
           </Flex>
           <Heading fontSize={0.6} color="7A7B8C">
             VALORANT is a free-to-play first-person hero shooter developed and
