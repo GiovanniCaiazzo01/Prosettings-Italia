@@ -51,6 +51,7 @@ const Img = ({
   paddingRight,
   paddingLeft,
   isLogo,
+  borderRadius,
 }) => {
   return (
     <StyledImg
@@ -69,6 +70,7 @@ const Img = ({
       paddingBottom={paddingBottom}
       paddingRight={paddingRight}
       paddingLeft={paddingLeft}
+      borderRadius={borderRadius}
     />
   );
 };
@@ -91,4 +93,5 @@ Img.propTypes = {
   paddingRight: PropTypes.number,
   paddingLeft: PropTypes.number,
   isLogo: PropTypes.bool,
+  borderRadius: PropTypes.number,
 };

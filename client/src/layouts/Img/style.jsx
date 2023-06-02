@@ -10,10 +10,12 @@ export const StyledImg = styled.img`
   ${(props) => props.marginLeft && "margin-left:" + props.marginLeft + "px;"}
   ${(props) => props.marginRight && "margin-right:" + props.marginRight + "px;"}
   ${(props) => props.padding && "padding:" + props.padding + "px;"}
-  ${(props) => props.paddingTop && "padding-top" + props.paddingTop + "px;"}
+  ${(props) => props.paddingTop && "padding-top:" + props.paddingTop + "px;"}
   ${(props) =>
-    props.paddingBottom && "padding-bottom" + props.paddingBottom + "px;"}
+    props.paddingBottom && "padding-bottom:" + props.paddingBottom + "px;"}
   ${(props) =>
-    props.paddingRight && "padding-right" + props.paddingRight + "px;"}
-  ${(props) => props.paddingLeft && "padding-left" + props.paddingLeft + "px;"}
+    props.paddingRight && "padding-right:" + props.paddingRight + "px;"}
+  ${(props) => props.paddingLeft && "padding-left:" + props.paddingLeft + "px;"}
+  ${(props) =>
+    props.borderRadius && "border-radius:" + props.borderRadius + "px;"}
 `;
