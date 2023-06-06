@@ -21,9 +21,16 @@ const GameCard = ({ bgImage, bottomLogo, bottomHeading, gameId }) => {
               <Img isLogo src={bottomLogo} width={110} marginBottom={20} />
             </Flex>
           </Background>
-          <Heading color="6e6e6e" fontSize={1}>
-            {bottomHeading}
-          </Heading>
+          {bottomHeading && (
+            <Heading
+              color="6e6e6e"
+              fontSize={1}
+              marginTop={0.8}
+              marginBottom={0.8}
+            >
+              {bottomHeading}
+            </Heading>
+          )}
         </Flex>
       </Link>
     </>
